@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Assignment</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="javascript.js"></script>
+
+</head>
+<body>
+	<div class="row">
+		<div class="table col-50">
+			<table>
+				<thead>
+					<tr>
+						<th>Product Name</th>
+						<th>Unit Price</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+				<tbody id="product_table">
+				</tbody>
+			</table>
+		</div>
+
+		<div class="details col-50">
+			<div class="row">
+				<div class="row">
+					<label>Product Name: </label><br>
+					<input type="text" name="product_name" id="product_name">
+				</div>
+
+				<div class="row">
+					<label>Unit Price: </label><br>
+					<input type="text" name="unit_price" id="unit_price">
+				</div>
+
+				<div class="row">
+					<label>Product Quantity: </label><br>
+					<input type="text" name="product_quantity" id="product_quantity">
+				</div>
+
+				<div class="row">
+					<button onclick="addItem()">Add New Item</button>
+				</div>
+
+				<div class="row">
+					<button onclick="calculateTotal()">Calculate Total</button>
+				</div>
+
+				<div class="row">
+					<button onclick="clearPage()">Clear All</button>
+				</div>
+
+				<div class="row">
+					<h1 id="display_total">TOTAL: </h1>
+				</div>
+			</div>
+		</div>
+	</div> <!-- row -->
+</body>
+</html>
